@@ -1,4 +1,4 @@
-4: The current receive address 
+4: The current receive address: 
     mmaT73ECwHqsF9m3aoxPnFCDdtUQr7aufk
 
 5.
