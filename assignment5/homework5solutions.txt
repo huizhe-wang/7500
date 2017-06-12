@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red52\green57\blue66;\red27\green31\blue34;\red21\green23\blue26;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl360\slmult1\pardirnatural
+
+\f0\fs28 \cf0 4: T\expnd0\expndtw0\kerning0
+he current receive address \
+\pard\pardeftab720\sl360\slmult1
+\cf0 \kerning1\expnd0\expndtw0     mmaT73ECwHqsF9m3aoxPnFCDdtUQr7aufk\
+\
+\pard\pardeftab720\sl360\slmult1
+\cf0 \expnd0\expndtw0\kerning0
+5.\
+(1) transaction ID: \
+     961829d91e01aa510a4d1f10b77d40de6fa524c094952dd62b7b30860f6a0a06\
+(2) the amount of testnet coins\
+     1.85154296 tBTC\
+(3) how many outputs does the transaction have? \
+      2 outputs\
+(4) What is the purpose of the output that locks coins to the address that\'92s not yours? \
+      avoid them to \kerning1\expnd0\expndtw0 be \expnd0\expndtw0\kerning0
+double-spent.\uc0\u8232 \kerning1\expnd0\expndtw0 \
+8. Address begins with 1WANG: \
+    1WANGEZJY8worXFAhjxFnkiimcKspRGzv\expnd0\expndtw0\kerning0
+\
+\
+\
+\pard\pardeftab720\sl360\slmult1
+\cf0 \expnd0\expndtw0\kerning0
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat1 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5320\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl360\slmult1
+\cf0 \expnd0\expndtw0\kerning0
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat1 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth5320\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl360\slmult1
+\cf0 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+}
