@@ -1,0 +1,15 @@
+4: The current receive address: 
+    mmaT73ECwHqsF9m3aoxPnFCDdtUQr7aufk
+
+5.
+(1) transaction ID: 
+     961829d91e01aa510a4d1f10b77d40de6fa524c094952dd62b7b30860f6a0a06
+(2) the amount of testnet coins
+     1.85154296 tBTC
+(3) how many outputs does the transaction have? 
+     2 outputs
+(4) What is the purpose of the output that locks coins to the address that’s not yours? 
+     avoid them to be double-spent.
+      
+8. Address begins with 1WANG: 
+    1WANGEZJY8worXFAhjxFnkiimcKspRGzv
