@@ -32,33 +32,30 @@ public class GroupMultiSigTransaction extends ScriptTester {
     public Script createLockingScript() {
     	
         ScriptBuilder builder = new ScriptBuilder();
-		builder.op(OP_2);
-		builder.data(keyBank.getPubKey());
-		builder.data(keyCus1.getPubKey());
-		builder.data(keyCus2.getPubKey());
-		builder.data(keyCus3.getPubKey());
-		builder.op(OP_4);
-		builder.op(OP_CHECKMULTISIG);
-		return builder.build();
+        builder.op(OP_1);
+        builder.data(keyCus1.getPubKey());
+        builder.data(keyCus2.getPubKey());
+        builder.data(keyCus3.getPubKey());
+        builder.op(OP_3);
+        builder.op(OP_CHECKMULTISIGVERIFY);
+        builder.data(keyBank.getPubKey());
+        builder.op(OP_CHECKSIG);
+        return builder.build();
+
 		
     }
 
     @Override
     public Script createUnlockingScript(Transaction unsignedTransaction) {
-    	Random random = new Random();
-		int num = (random.nextInt(3 - 1 + 1) + 1);
-		ArrayList<DeterministicKey> keys = new ArrayList<DeterministicKey>();
-		keys.add(keyCus1);
-		keys.add(keyCus2);
-		keys.add(keyCus3);
-		TransactionSignature txSigBank = sign(unsignedTransaction, keyBank);
-		TransactionSignature txSig = sign(unsignedTransaction, keys.get(num - 1));
-		ScriptBuilder builder = new ScriptBuilder();
-		builder.smallNum(OP_0);
-		builder.smallNum(OP_0);
-		builder.data(txSigBank.encodeToBitcoin());
-		builder.data(txSig.encodeToBitcoin());
-		return builder.build();    }
+        ScriptBuilder builder = new ScriptBuilder();
+        TransactionSignature txSig;
+        txSig = sign(unsignedTransaction, keyBank);
+        builder.data(txSig.encodeToBitcoin());
+        builder.smallNum(0);
+        txSig = sign(unsignedTransaction, keyCus1);
+        builder.data(txSig.encodeToBitcoin());
+        return builder.build();
+        }
 
     public static void main(String[] args) throws InsufficientMoneyException, InterruptedException {
         WalletInitTest wit = new WalletInitTest();

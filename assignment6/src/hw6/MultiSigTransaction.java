@@ -44,16 +44,9 @@ public class MultiSigTransaction extends ScriptTester {
     @Override
     public Script createUnlockingScript(Transaction unsignedTransaction) {
         //create a corresponding unlocking script.
-    	Random random = new Random();
-		int num = (random.nextInt(3 - 1 + 1) + 1);
-		ArrayList<DeterministicKey> keys = new ArrayList<DeterministicKey>();
-		keys.add(key1);
-		keys.add(key2);
-		keys.add(key3);
-		TransactionSignature txSig = sign(unsignedTransaction, keys.get(num - 1));
-		ScriptBuilder builder = new ScriptBuilder();
-		builder.smallNum(OP_0);
-		builder.smallNum(OP_0);
+    	ScriptBuilder builder = new ScriptBuilder();
+		builder.smallNum(0);
+		TransactionSignature txSig = sign(unsignedTransaction, key1);
 		builder.data(txSig.encodeToBitcoin());
 		return builder.build();    
 	}
